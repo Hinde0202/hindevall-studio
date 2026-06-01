@@ -23,9 +23,12 @@ mobileMenu.querySelectorAll('a').forEach(a => {
 // Image sliders
 document.querySelectorAll('[data-slider]').forEach(slider => {
   const track = slider.querySelector('.slider-track')
-  const imgs   = track.querySelectorAll('img')
+  const imgs   = Array.from(track.querySelectorAll('img'))
   const dotsEl = slider.querySelector('.slider-dots')
   let current  = 0
+
+  // Set first image active
+  imgs[0].classList.add('active')
 
   // Create dots
   imgs.forEach((_, i) => {
@@ -36,11 +39,11 @@ document.querySelectorAll('[data-slider]').forEach(slider => {
   })
 
   function goTo(n) {
+    imgs[current].classList.remove('active')
+    dotsEl.children[current].classList.remove('active')
     current = (n + imgs.length) % imgs.length
-    track.style.transform = `translateX(-${current * 100}%)`
-    dotsEl.querySelectorAll('.slider-dot').forEach((d, i) =>
-      d.classList.toggle('active', i === current)
-    )
+    imgs[current].classList.add('active')
+    dotsEl.children[current].classList.add('active')
   }
 
   slider.querySelector('.slider-prev').addEventListener('click', () => goTo(current - 1))
