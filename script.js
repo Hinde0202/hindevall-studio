@@ -20,6 +20,33 @@ mobileMenu.querySelectorAll('a').forEach(a => {
   })
 })
 
+// Image sliders
+document.querySelectorAll('[data-slider]').forEach(slider => {
+  const track = slider.querySelector('.slider-track')
+  const imgs   = track.querySelectorAll('img')
+  const dotsEl = slider.querySelector('.slider-dots')
+  let current  = 0
+
+  // Create dots
+  imgs.forEach((_, i) => {
+    const dot = document.createElement('button')
+    dot.className = 'slider-dot' + (i === 0 ? ' active' : '')
+    dot.addEventListener('click', () => goTo(i))
+    dotsEl.appendChild(dot)
+  })
+
+  function goTo(n) {
+    current = (n + imgs.length) % imgs.length
+    track.style.transform = `translateX(-${current * 100}%)`
+    dotsEl.querySelectorAll('.slider-dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    )
+  }
+
+  slider.querySelector('.slider-prev').addEventListener('click', () => goTo(current - 1))
+  slider.querySelector('.slider-next').addEventListener('click', () => goTo(current + 1))
+})
+
 // Contact form → Formspree
 const form = document.querySelector('.contact-form')
 const btnText     = form.querySelector('.btn-form-text')

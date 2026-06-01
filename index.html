@@ -135,8 +135,8 @@
 
       <!-- Featured project -->
       <div class="portfolio-card featured">
-        <div class="portfolio-img" style="background:#FDF8F5;padding:0;display:block;">
-          <img src="img-kosmetika.svg" alt="Lumière kosmetika" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <div class="portfolio-img" style="padding:0;overflow:hidden;">
+          <img src="img-kosmetika.svg" alt="Lumière kosmetika" style="width:100%;height:100%;object-fit:cover;" />
         </div>
         <div class="portfolio-meta">
           <span class="portfolio-tag">E-handel</span>
@@ -151,13 +151,27 @@
 
       <!-- Project 2 -->
       <div class="portfolio-card">
-        <div class="portfolio-img" style="background:#0F2D1A;padding:0;display:block;">
-          <img src="img-golf.svg" alt="FairwayGo golfapp" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <div class="portfolio-img" style="padding:0;overflow:hidden;position:relative;">
+          <div class="slider" data-slider>
+            <div class="slider-track">
+              <img src="golf1.png" alt="Golf League skärmbild 1" />
+              <img src="golf2.png" alt="Golf League skärmbild 2" />
+              <img src="golf3.png" alt="Golf League skärmbild 3" />
+              <img src="golf4.png" alt="Golf League skärmbild 4" />
+            </div>
+            <button class="slider-btn slider-prev" aria-label="Föregående">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="slider-btn slider-next" aria-label="Nästa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="slider-dots"></div>
+          </div>
         </div>
         <div class="portfolio-meta">
           <span class="portfolio-tag">Webb-app</span>
-          <h3>FairwayGo — Scorekort-app för golfare</h3>
-          <p>En webb-app för att hålla koll på slag, handicap och statistik under en golfrond. Byggd som fritidsprojekt med realtidsuppdateringar och banöversikt.</p>
+          <h3>Golf League — Seriespel och statistik för golfsällskap</h3>
+          <p>En webb-app för att organisera golfseriespel. Hanterar resultat, poängtabeller och statistik för ett helt sällskap — byggd som fritidsprojekt.</p>
           <a href="#kontakt" class="portfolio-arrow">
             Starta ett liknande projekt
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
