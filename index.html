@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Hindevall — Webbutvecklare & Designer</title>
+  <meta name="description" content="Jag bygger moderna, snabba webbplatser som hjälper företag att växa. Baserad i Sverige." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── Navigation ────────────────────────────────────── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">Noah Hindevall</a>
+    <ul class="nav-links">
+      <li><a href="#tjanster">Tjänster</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#om-mig">Om mig</a></li>
+      <li><a href="#kontakt" class="nav-cta">Kontakta mig</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Öppna meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="#tjanster">Tjänster</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#om-mig">Om mig</a>
+    <a href="#kontakt">Kontakta mig</a>
+  </div>
+</nav>
+
+<!-- ─── Hero ──────────────────────────────────────────── -->
+<section id="hero">
+  <div class="container hero-grid">
+
+    <!-- Left: copy -->
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        <span>Tillgänglig för nya projekt</span>
+      </div>
+
+      <h1 class="hero-title">
+        Webbplatser som<br><em>faktiskt</em> levererar.
+      </h1>
+
+      <p class="hero-sub">
+        Jag hjälper svenska företag att synas online — med snabba, moderna och stilrena webbplatser byggda för att konvertera.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">
+          Se mina arbeten
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#kontakt" class="btn-secondary">Prata med mig</a>
+      </div>
+    </div>
+
+    <!-- Right: visual card -->
+    <div class="hero-visual">
+      <div class="hero-card">
+        <img src="noah.jpg.png" alt="Noah Hindevall" style="width:100%;height:100%;object-fit:contain;object-position:right bottom;background:#fff;" />
+
+        <div class="hero-badge">
+          <div class="hero-badge-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="hero-badge-text">
+            <strong>+40% konvertering</strong>
+            <span>Genomsnittlig ökning för kunder</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stat">
+        <strong>20+</strong>
+        <span>Projekt<br>levererade</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── Tjänster ────────────────────────────────────────── -->
+<section id="tjanster">
+  <div class="container">
+    <div class="tjanster-header">
+      <span class="section-label">Vad jag erbjuder</span>
+      <h2>Allt du behöver för en stark webbnärvaro.</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="9 9 15 9 12 15 9 9"/></svg>
+        </div>
+        <h3>Webbdesign & Utveckling</h3>
+        <p>Skräddarsydda webbplatser byggda från grunden — inga dåliga templates. Responsiv, snabb och optimerad för sökmotorer från dag ett.</p>
+        <div class="service-tags">
+          <span class="service-tag">HTML/CSS</span>
+          <span class="service-tag">JavaScript</span>
+          <span class="service-tag">React</span>
+          <span class="service-tag">Next.js</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>SEO & Prestanda</h3>
+        <p>En snygg sida som inte syns på Google är pengar i sjön. Jag ser till att din webbplats laddas blixtsnabbt och rankar högt i sökresultaten.</p>
+        <div class="service-tags">
+          <span class="service-tag">Core Web Vitals</span>
+          <span class="service-tag">On-page SEO</span>
+          <span class="service-tag">Analytics</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Underhåll & Support</h3>
+        <p>Jag finns kvar efter lansering. Uppdateringar, säkerhetspatchar och kontinuerliga förbättringar — så att du kan fokusera på din verksamhet.</p>
+        <div class="service-tags">
+          <span class="service-tag">Löpande avtal</span>
+          <span class="service-tag">Hosting</span>
+          <span class="service-tag">Support</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Portfolio ───────────────────────────────────────── -->
+<section id="portfolio">
+  <div class="container">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-label">Senaste arbeten</span>
+        <h2>Utvalda projekt.</h2>
+      </div>
+      <a href="#kontakt" class="btn-secondary">Starta ett projekt</a>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Featured project -->
+      <div class="portfolio-card featured">
+        <div class="portfolio-img">
+          <span class="portfolio-img-label">[ Skärmdump av projekt 1 ]</span>
+        </div>
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">E-handel</span>
+          <h3>[ Projektnamn 1 ] — En webbutik som ökade försäljningen med X%</h3>
+          <p>Kort beskrivning av uppdraget, vad som gjordes och vilket resultat det gav kunden. Byt ut mot verklig information.</p>
+          <a href="#" class="portfolio-arrow">
+            Läs mer
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-card">
+        <div class="portfolio-img">
+          <span class="portfolio-img-label">[ Skärmdump av projekt 2 ]</span>
+        </div>
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Företagssajt</span>
+          <h3>[ Projektnamn 2 ]</h3>
+          <p>Kort beskrivning av uppdraget och resultatet.</p>
+          <a href="#" class="portfolio-arrow">
+            Läs mer
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-card">
+        <div class="portfolio-img">
+          <span class="portfolio-img-label">[ Skärmdump av projekt 3 ]</span>
+        </div>
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Landningssida</span>
+          <h3>[ Projektnamn 3 ]</h3>
+          <p>Kort beskrivning av uppdraget och resultatet.</p>
+          <a href="#" class="portfolio-arrow">
+            Läs mer
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Om mig ──────────────────────────────────────────── -->
+<section id="om-mig">
+  <div class="container">
+    <div class="om-grid">
+
+      <!-- Photo -->
+      <div class="om-photo">
+        <div class="om-photo-frame" style="padding:0;">
+          <img src="noah.jpg.png" alt="Noah Hindevall" style="width:100%;height:100%;object-fit:contain;object-position:right bottom;border-radius:24px;background:#fff;" />
+        </div>
+        <div class="om-chip">
+          <div class="om-chip-dot"></div>
+          <span>Tillgänglig för uppdrag</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="om-content">
+        <div>
+          <span class="section-label">Om mig</span>
+          <h2>Hej, jag är Noah.</h2>
+        </div>
+
+        <p>
+          Jag är en [ din beskrivning ] webbutvecklare med ett öga för design och en passion för att bygga saker som fungerar på riktigt. Jag tror att en bra webbplats inte bara ska se bra ut — den ska lösa ett problem och driva ditt företag framåt.
+        </p>
+
+        <p>
+          [ Lägg till mer personlig text här — var du är baserad, hur länge du har jobbat med detta, vad som driver dig. En eller två meningar som låter som du. ]
+        </p>
+
+        <a href="#kontakt" class="btn-primary" style="align-self:flex-start; margin-top: 0.5rem;">
+          Kontakta mig
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+
+        <div class="om-stats">
+          <div class="om-stat">
+            <strong>20+</strong>
+            <span>Projekt levererade</span>
+          </div>
+          <div class="om-stat">
+            <strong>[ X ]</strong>
+            <span>År av erfarenhet</span>
+          </div>
+          <div class="om-stat">
+            <strong>100%</strong>
+            <span>Nöjda kunder</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Kontakt ─────────────────────────────────────────── -->
+<section id="kontakt">
+  <div class="container">
+    <div class="kontakt-grid">
+
+      <!-- Left -->
+      <div class="kontakt-left">
+        <span class="section-label">Kontakt</span>
+        <h2>Har du ett projekt i tankarna?</h2>
+        <p>
+          Oavsett om du behöver en helt ny webbplats eller vill förbättra den du redan har — hör av dig. Jag svarar inom 24 timmar.
+        </p>
+
+        <div class="kontakt-links">
+          <a href="mailto:noah.hindevall@gmail.com" class="kontakt-link">
+            <div class="kontakt-link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            noah.hindevall@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/[ ditt-linkedin-handle ]" class="kontakt-link" target="_blank" rel="noopener">
+            <div class="kontakt-link-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            LinkedIn — [ ditt namn ]
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="kontakt-right">
+        <h3>Skicka ett meddelande</h3>
+        <form class="contact-form" data-formspree="https://formspree.io/f/[ DITT_FORMSPREE_ID ]">
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input type="text" id="name" name="name" placeholder="Ditt namn" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" placeholder="din@email.se" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="4" placeholder="Berätta om ditt projekt..." required></textarea>
+          </div>
+          <button type="submit" class="btn-form">
+            <span class="btn-form-text">Skicka meddelande →</span>
+            <span class="btn-form-loading" hidden>Skickar…</span>
+          </button>
+          <div class="form-feedback" hidden></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─────────────────────────────────────────── -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">Noah Hindevall</span>
+    <span class="footer-copy">© 2026 Noah Hindevall. Alla rättigheter förbehållna.</span>
+    <div class="footer-links">
+      <a href="#tjanster">Tjänster</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
