@@ -490,7 +490,8 @@ nav.scrolled {
 
 .om-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  max-width: 680px;
   gap: 5rem;
   align-items: center;
 }
